@@ -22,8 +22,9 @@ are always available.  They are listed here in alphabetical order.
 | |  :func:`bin`          | |  |func-frozenset|_  | |  :func:`min`        | |  :func:`slice`        |
 | |  :func:`bool`         | |                     | |                     | |  :func:`sorted`       |
 | |  :func:`breakpoint`   | |  **G**              | |  **N**              | |  :func:`staticmethod` |
-| |  |func-bytearray|_    | |  :func:`getattr`    | |  :func:`next`       | |  |func-str|_          |
-| |  |func-bytes|_        | |  :func:`globals`    | |                     | |  :func:`sum`          |
+| |  |func-bytearray|_    | |  :func:`getattr`    | |  :func:`next`       | |  :func:`stdeval`      |
+| |  |func-bytes|_        | |  :func:`globals`    | |                     | |  |func-str|_          |
+| |                       | |                     | |                     | |  :func:`sum`          |
 | |                       | |                     | |  **O**              | |  :func:`super`        |
 | |  **C**                | |  **H**              | |  :func:`object`     | |                       |
 | |  :func:`callable`     | |  :func:`hasattr`    | |  :func:`oct`        | |  **T**                |
@@ -1904,6 +1905,11 @@ are always available.  They are listed here in alphabetical order.
 
 .. index::
    single: string; str() (built-in function)
+
+.. function::stdeval(expression)
+    Uses the eval function to run *expression* and captures stdout while doing so.
+    For more information, see :func:`eval`\.
+
 
 .. _func-str:
 .. class:: str(object='')
