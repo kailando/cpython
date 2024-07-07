@@ -1859,6 +1859,16 @@ are always available.  They are listed here in alphabetical order.
 
    For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`.
 
+.. function::stdeval(expression)
+   Uses the eval function to run *expression* and captures stdout while doing so.
+   `output[0]` is the recorded stdout, while `output[1]` is the result of the expression.
+   For example, ```
+x=stdeval("1+2")
+print(x[0]) # Nothing
+print(x[1]) # 3
+```
+   For more information, see :func:`eval`.
+
 .. decorator:: staticmethod
 
    Transform a method into a static method.
@@ -1905,11 +1915,6 @@ are always available.  They are listed here in alphabetical order.
 
 .. index::
    single: string; str() (built-in function)
-
-.. function::stdeval(expression)
-    Uses the eval function to run *expression* and captures stdout while doing so.
-    For more information, see :func:`eval`\.
-
 
 .. _func-str:
 .. class:: str(object='')
